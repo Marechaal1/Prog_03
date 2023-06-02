@@ -1,0 +1,150 @@
+:root{
+    --cor-hover: rgb(23, 37, 165);
+    --color-h1:aliceblue;
+    --cor-menu: red;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+h1{
+    color: var(--color-h1);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 2vh;
+    font-family:Arial, Helvetica, sans-serif;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: grey;
+}
+
+p{
+    letter-spacing: 4px;
+    text-align: center;
+    font-size: 30px;
+    color: aliceblue;
+    padding: 2vh;
+}
+
+.logo{
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #3838ec;
+    height: 8vh;
+}
+
+main{
+    background: url(https://www.pixel4k.com/wp-content/uploads/2018/11/road-marking-sky-mountains-distance-4k_1541117583.jpg.webp) no-repeat
+    center center;
+    background-size: cover;
+    height: 92vh;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li{
+    letter-spacing: 4px;
+    margin-left: 10px;
+    list-style: none;
+}
+
+
+.nav-list li:hover{
+    background-color: var(--cor-hover);
+    letter-spacing: 4px;
+    margin-left: 10px;
+    list-style: none;
+}
+/*SUBMENU*/
+
+.nav-list li ul{
+    background-color: var(--cor-hover);
+    position: absolute;
+    display: none;
+    letter-spacing: 4px;
+    margin-left: 10px;
+    list-style: none;
+}
+
+.nav-list li:hover ul{
+    display: block;
+    letter-spacing: 4px;
+    margin-left: 10px;
+    list-style: none;
+}
+.nav-list li ul{
+    width: 100px;
+}
+.nav-list ul ul a{
+    display: block;
+}
+
+/*Carros usados */
+
+.centro{
+transition: .5s ease;
+position: absolute;
+top: 150px;
+left: 150px;
+font-size: 18px;
+background-color: #3838ec;
+opacity: 0;
+}
+
+.text{
+    text-align: left;
+    color: #fff;
+    font-size: 16px;
+    padding: 16px 32px;
+    letter-spacing: 2px;
+}
+
+.ad:hover .centro{
+    opacity: 1;
+}
+
+.ad{
+    position: relative;
+    opacity: 1;
+}
+
+.ad img{
+    width: 100%;
+}
+.ad:hover img{
+    opacity: 0.3;
+}
+
+
+.ad:hover .textbox{
+    opacity: 1;
+}
+
+/*Tabela main page */
+table{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+table{
+    justify-content: space-around;
+}
+th{
+    width: 50vw;
+}
